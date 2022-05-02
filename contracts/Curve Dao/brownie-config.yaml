@@ -1,0 +1,15 @@
+reports:
+  exclude_paths:
+    - contracts/testing/*.*
+
+networks:
+  development:
+    cmd_settings:
+      accounts: 100
+  mainnet-fork:
+    cmd_settings:
+      unlock: 0xC447FcAF1dEf19A583F97b3620627BF69c05b5fB
+
+autofetch_sources: True
+dependencies:
+  - curvefi/curve-crypto-contract@1.0.0
